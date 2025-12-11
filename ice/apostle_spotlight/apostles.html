@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        body {
+            background-color: #E8ECED;
+        }
+        #wrapper {
+            height: 700px;
+            width: 900px;
+            background: url("images/christus.webp");
+            border: 10px solid black;
+            border-radius:20px;
+            margin: 0 auto;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+       img {
+        border: 8px white solid;
+        border-radius: 50%;
+        }
+         #pres img{
+            height:125px;
+            width:125px;
+            display: flex;
+         }
+         #pres {
+            display: grid;
+            grid-template-columns: repeat(3, 150px); 
+            gap: 10px; 
+            justify-items: center; 
+            margin-top: 10px;
+            justify-content: center;
+            align-items: center;
+         }
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        #apostles img {
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+            display: block;
+            border-radius: 50%;
+        }
+        #apostles {
+            display: grid;
+            grid-template-columns: repeat(4, 120px); /* 4 columns, adjust as needed */
+            gap: 1px; /* space between images */
+            justify-items: center; /* center images in each cell */
+            margin-top: 1px;
+            justify-content: center;
+            align-items: center;
+        }
+        h2 {
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+            margin-bottom: 1px;
+        }
+        #pres img:hover, #apostles img:hover {
+            border-color: yellow;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+   <div id="wrapper">
+    <h1>First Presidency</h1>
+    <div id="pres">
+        <img src="images/oaks.webp" alt="President Oaks">
+        <img src="images/nelson.webp" alt="President Nelson">
+        <img src="images/eyring.webp" alt="President Eyring">
+
+    </div> 
+    <h2>Quorum of the Twelve Apostles</h2>
+    <div id="apostles">
+        <img src="images/holland.webp" alt="Elder Holland">
+        <img src="images/uchtdorf.webp" alt="Elder Uchtdorf">
+        <img src="images/bednar.webp" alt="Elder Bednar">
+        <img src="images/cook.webp" alt="Elder Cook">
+        <img src="images/christofferson.webp" alt="Elder Christofferson">
+        <img src="images/anderson.webp" alt="Elder Anderson">
+        <img src="images/rasband.webp" alt="Elder Rasband">
+        <img src="images/stevenson.webp" alt="Elder Stevenson">
+        <img src="images/renlund.webp" alt="Elder Renlund">
+        <img src="images/gong.webp" alt="Elder Gong">
+        <img src="images/soares.webp" alt="Elder Soares">
+        <img src="images/kearon.webp" alt="Elder Kearon">
+        </div>
+
+   </div>
+</body>
+</html>

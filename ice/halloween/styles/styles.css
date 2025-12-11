@@ -1,0 +1,110 @@
+#wrapper {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    font-family: 'Creepster', cursive;
+}
+header nav {
+    background-color: #7735b1;
+    border-bottom: 2px solid #2c0a5f;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+h1, h2, h3 {
+    color: #ff6600;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+p {
+    text-align: center;
+    text-shadow: 1px 1px 2px #000000;
+}
+img {
+    border: 5px solid #ff6600;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px #000000;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+img:hover {
+    transform: rotateX(180deg);
+    transition: transform 1s;
+}
+.hover-area img {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+h1 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+h1:after {
+  content: "boo!";
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 900px;
+  background-image: url(../images/download.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none; 
+}
+
+h1:hover::after {
+  opacity: 1; /* image fades in when hovered */
+}
+h1 {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+body {
+  text-align: center;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgb(238, 114, 20), 0 0 20px rgb(238, 114, 20), 0 0 40px rgb(238, 114, 20);
+  }
+  to {
+    text-shadow: 0 0 20px rgb(238, 114, 20), 0 0 40px rgb(238, 114, 20), 0 0 80px rgb(238, 114, 20);
+  }
+}
+
+h1 {
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+nav {
+    display: flex;                     /* makes items line up in a row */
+    justify-content: space-around;     /* spreads them out evenly */
+    align-items: center;               /* centers them vertically */
+    background-color: #333;
+    padding: 1em;
+  }
+   nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  nav a:hover {
+    background-color: #555;
+    border-radius: 4px;
+  }
